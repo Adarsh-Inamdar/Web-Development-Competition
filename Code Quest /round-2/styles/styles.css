@@ -1,0 +1,431 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #121212;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  border-radius: 2rem;
+  top: 0;
+  width: 100%;
+  background: #121212;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: #00E6FF;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+#navbar ul li a:hover {
+  color: #ff00b4;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 5%;
+  background: linear-gradient(90deg, #ff00b4, #00E6FF);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+#hero p {
+  font-size: 1.2em;
+  opacity: 0;
+  animation: fadeIn 1.5s 1s forwards;
+}
+
+#countdown {
+  font-size: 1.5em;
+  margin: 20px 0;
+  opacity: 0;
+  animation: fadeIn 1.5s 1s forwards;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #00E6FF;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff00b4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* About Section */
+#about {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #222;
+}
+
+.abt {
+  background-color: #333;
+  padding: 10%;
+  color: #ccc;
+}
+
+#about h2 {
+  font-size: 2.5em;
+  color: #00E6FF;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Speakers Section */
+#speakers {
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+#speakers h2 {
+  font-size: 2.5em;
+  color: #00E6FF;
+  margin-bottom: 20px;
+}
+
+.speaker-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.speaker {
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  animation: bounceIn 1s ease-in-out;
+}
+
+.speaker:hover {
+  transform: scale(1.05);
+}
+
+.speaker img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.speaker h3 {
+  color: #00E6FF;
+  margin: 10px 0;
+}
+
+/* Schedule Section */
+#schedule {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #222;
+}
+
+#schedule h2 {
+  font-size: 2.5em;
+  color: #00E6FF;
+  margin-bottom: 20px;
+}
+
+#schedule table {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#schedule th,
+#schedule td {
+  padding: 15px;
+  border-bottom: 1px solid #555;
+  color: #ccc;
+  font-size: 1.1em;
+}
+
+#schedule th {
+  color: #00E6FF;
+  text-align: left;
+}
+
+/* Tickets Section */
+#tickets {
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+#tickets h2 {
+  font-size: 2.5em;
+  color: #00E6FF;
+  margin-bottom: 20px;
+}
+
+.ticket-types {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ticket {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ticket h3 {
+  color: #00E6FF;
+  font-size: 1.5em;
+}
+
+.ticket p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.price {
+  font-size: 1.8em;
+  color: #00E6FF;
+  font-weight: bold;
+}
+
+/* Registration Form Section */
+#register {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #222;
+}
+
+#register h2 {
+  font-size: 2.5em;
+  color: #00E6FF;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #00E6FF;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff00b4;
+}
+
+/* Popup Styling */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+#close-popup {
+  font-size: 1.5em;
+  color: #ff00b4;
+  cursor: pointer;
+  float: right;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 1.5s 1s forwards;
+}
+
+.bounce-in {
+  animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0%, 100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background: #333;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+  font-size: 1em;
+}
+/* Scroll Animation Styles */
+
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-up-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-up-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bounce-in-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.bounce-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: bounce 0.8s ease forwards;
+}
+
+/* Keyframes for Bounce */
+@keyframes bounce {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

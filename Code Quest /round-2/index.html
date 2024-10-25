@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Conference 2024</title>
+  <link rel="stylesheet" href="/round-2/styles/styles.css">
+  <script defer src="/round-2/script.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <h1 class="fade-in">Tech Conference 2024</h1>
+    <p class="fade-in-delay">The future of technology, today.</p>
+    <div id="countdown" class="fade-in-delay"></div>
+    <a href="#register" class="btn">Register Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="abt">
+      <h2>About the Event</h2>
+      <p>This annual tech conference brings together industry leaders, innovators, and tech enthusiasts for a full day of inspiration, knowledge sharing, and networking. Join us to explore the latest trends in technology, AI, and future-driven solutions.</p>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers">
+    <h2>Meet Our Speakers</h2>
+    <div class="speaker-list">
+      <div class="speaker bounce-in">
+        <img src="/round-2/image/Unknown-3.png" alt="Speaker 1">
+        <h3>Jane Doe</h3>
+        <p>CTO, Tech Innovations</p>
+      </div>
+      <div class="speaker bounce-in">
+        <img src="/round-2/image/Unknown-3.png" alt="Speaker 2">
+        <h3>John Smith</h3>
+        <p>CEO, AI Solutions</p>
+      </div>
+      <div class="speaker bounce-in">
+        <img src="/round-2/image/Unknown-3.png" alt="Speaker 3">
+        <h3>Emily Stone</h3>
+        <p>Lead Developer, CloudNow</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule">
+    <h2>Event Schedule</h2>
+    <table class="slide-in">
+      <tr class="tbhead">
+        <th>Time</th>
+        <th>Session</th>
+      </tr>
+      <tr>
+        <td>9:00 AM</td>
+        <td>Registration & Opening Remarks</td>
+      </tr>
+      <tr>
+        <td>10:00 AM</td>
+        <td>Keynote by Jane Doe</td>
+      </tr>
+      <tr>
+        <td>11:30 AM</td>
+        <td>Panel Discussion on AI</td>
+      </tr>
+      <tr>
+        <td>2:00 PM</td>
+        <td>Workshop: The Future of Cloud</td>
+      </tr>
+      <tr>
+        <td>4:00 PM</td>
+        <td>Networking & Closing</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Ticket Prices Section -->
+  <section id="tickets">
+    <h2>Ticket Pricing</h2>
+    <div class="ticket-types">
+      <div class="ticket">
+        <h3>General Admission</h3>
+        <p>Access to all sessions and networking events.</p>
+        <p class="price">₹50</p>
+      </div>
+      <div class="ticket">
+        <h3>VIP Admission</h3>
+        <p>Includes all sessions, VIP seating, and exclusive lunch with speakers.</p>
+        <p class="price">₹100</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section id="register">
+    <h2>Register Now</h2>
+    <button id="open-popup" class="btn">Open Registration Form</button>
+  </section>
+
+  <!-- Registration Pop-Up-->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="close-popup">&times;</span>
+      <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="ticket-type">Ticket Type:</label>
+        <select id="ticket-type" name="ticket-type">
+          <option value="general">General Admission - ₹50</option>
+          <option value="vip">VIP Admission - ₹100</option>
+        </select>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div> 
+  <!-- Registration Pop-Up -->
+<!-- <div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="close-popup">&times;</span>
+    <form id="registration-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="ticket-type">Ticket Type:</label>
+      <select id="ticket-type" name="ticket-type">
+        <option value="general">General Admission - ₹50</option>
+        <option value="vip">VIP Admission - ₹100</option>
+      </select>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div> -->
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Tech Conference. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIA Styling</title>
+    <link rel="stylesheet" href="/src/Styles/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">K</div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">COLLECTIONS</a></li>
+                <li><a href="#">WISH-LIST</a></li>
+                <li><a href="#">BAG</a></li>
+            </ul>
+        </nav>
+        <div class="user-icon">
+            <img src="/public/Unknown-2.jpeg" alt="User Icon">
+        </div>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="banner">
+        <h1>KAIA</h1>
+        <p>Styling Since 1913</p>
+        <button class="explore-btn" ><a href="/src/explore.html">EXPLORE</a></button>
+    </section>
+
+    <!-- Selection Section -->
+    <div class="container">
+        <div class="overlay-text">
+            <h2>What’s your vibe today?</h2>
+            <p>Casual cool, business sharp, or weekend comfy?</p>
+            <p>Tell us what you’re feeling, and we’ll help you find the perfect fit!</p>
+        </div>
+        <div class="buttons">
+            <button class="selection-btn" onclick="selectCategory('Men')">MEN</button>
+            <button class="selection-btn" onclick="selectCategory('Women')">WOMEN</button>
+            <button class="selection-btn" onclick="selectCategory('Kids')">KIDS</button>
+        </div>
+    </div>
+    <script src="/src/script.js"></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="unique-offering">
+            <div class="offer">Free Alternation</div>
+            <div class="offer">Personalized Engraving</div>
+            <div class="offer">Express Delivery</div>
+            <div class="offer">Easy Exchange and Returns</div>
+        </div>
+        <div class="feedback">
+            <textarea placeholder="Write your feedback here...."></textarea>
+            <button type="submit">SUBMIT</button>
+        </div>
+        <div class="socials">
+            <h3>FOLLOW US!</h3>
+            <div class="icons">
+                <img src="path_to_youtube_icon" alt="YouTube">
+                <img src="path_to_x_icon" alt="X (formerly Twitter)">
+                <img src="path_to_instagram_icon" alt="Instagram">
+                <img src="path_to_facebook_icon" alt="Facebook">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
