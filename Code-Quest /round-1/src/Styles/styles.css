@@ -46,7 +46,7 @@ nav ul li a {
 
 /* Banner Section */
 .banner {
-  background-image: url('/public/image.jpeg');
+  background-image: url('/Code-Quest /round-1/public/image.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ footer {
   background-size: contain;
   background-repeat: no-repeat; */
   /* background-position: center; */
-  background-image: url('/public/image-1.jpeg');
+  background-image: url('/Code-Quest /round-1//public/image-1.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
